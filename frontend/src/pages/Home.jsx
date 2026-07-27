@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-blue-700 text-white">
+      <section className="bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Biozone Pharma
@@ -24,7 +24,7 @@ const Home = () => {
           </p>
           <Link
             to="/products"
-            className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100"
+            className="bg-accent text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent-light"
           >
             Browse Products
           </Link>
@@ -49,7 +49,7 @@ const Home = () => {
             {categories.map((category, index) => (
               <div
                 key={index}
-                className="bg-white shadow-sm rounded-lg p-6 text-center hover:shadow-md transition"
+                className="bg-white shadow-sm rounded-lg p-6 text-center hover:shadow-md transition border-t-4 border-accent"
               >
                 <p className="font-medium text-gray-700">{category}</p>
               </div>
@@ -59,11 +59,11 @@ const Home = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-blue-700 text-white text-center py-16">
+      <section className="bg-primary text-white text-center py-16">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">Looking for bulk medicine supply?</h2>
         <Link
           to="/contact"
-          className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100"
+          className="bg-accent text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent-light"
         >
           Get in Touch
         </Link>

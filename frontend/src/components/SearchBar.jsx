@@ -9,7 +9,7 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
         placeholder="Search by name or salt composition..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="w-full px-4 py-2 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full px-4 py-2 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
       />
       <FaSearch className="absolute left-3 top-3 text-gray-400" />
     </div>
