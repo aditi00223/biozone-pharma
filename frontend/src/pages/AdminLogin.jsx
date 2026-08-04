@@ -45,7 +45,7 @@ const AdminLogin = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
           />
         </div>
 
@@ -57,7 +57,7 @@ const AdminLogin = () => {
             value={formData.password}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
           />
         </div>
 
@@ -66,7 +66,7 @@ const AdminLogin = () => {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-blue-700 text-white font-semibold py-3 rounded-lg hover:bg-blue-800 disabled:opacity-50"
+          className="w-full bg-primary text-white font-semibold py-3 rounded-lg hover:bg-primary-light disabled:opacity-50"
         >
           {loading ? 'Logging in...' : 'Login'}
         </button>
